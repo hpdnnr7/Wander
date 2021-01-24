@@ -3,7 +3,8 @@
 
 Planning dates or activities can be hard, especially when you're on a budget, or even worse... when you're in the middle of a pandemic! That's why we created an app that does it all for you!
 
-**What it does**
+### What it does
+
 Wander creates an itinerary of activities around you based on your preferences and budget. Upon signing up, you are prompted to take a short quiz for a more personalized result.
 
 ## Getting Started
