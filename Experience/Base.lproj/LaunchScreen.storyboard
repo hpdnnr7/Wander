@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="app-icon" translatesAutoresizingMaskIntoConstraints="NO" id="pom-Ca-lEc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="app-logo" translatesAutoresizingMaskIntoConstraints="NO" id="pom-Ca-lEc">
                                 <rect key="frame" x="-104" y="156" width="623" height="585"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -30,6 +30,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="app-icon" width="1024" height="1024"/>
+        <image name="app-logo" width="1024" height="1024"/>
     </resources>
 </document>

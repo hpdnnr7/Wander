@@ -11,6 +11,7 @@ target 'Experience' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'MaterialComponents/Buttons'
+  pod 'MaterialComponents/Buttons+Theming'
 
   target 'ExperienceTests' do
     inherit! :search_paths

@@ -6,31 +6,31 @@
 //
 
 import UIKit
-import MaterialComponents
 
 class ViewController: UIViewController {
     
+    // MARK: - Properties
+
     // MARK: - UI
-    @IBOutlet weak var loginButton: MDCButton!
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        let loginViewController = segue.destination as! LoginViewController
-        
+        loginButton.layer.cornerRadius = 5
+        signUpButton.layer.cornerRadius = 5
     }
     
     // MARK: - IBActions
-    @IBAction func loginPressed(_ sender: MDCButton) {
+    @IBAction func loginPressed(_ sender: UIButton) {
         
     }
-
+    
+    @IBAction func signUpPressed(_ sender: UIButton) {
+        
+    }
+    
 }
 
