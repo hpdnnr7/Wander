@@ -16,6 +16,10 @@
 		CB13609D25BD03C000183F72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB13609B25BD03C000183F72 /* LaunchScreen.storyboard */; };
 		CB1360A825BD03C100183F72 /* ExperienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1360A725BD03C100183F72 /* ExperienceTests.swift */; };
 		CB1360B325BD03C100183F72 /* ExperienceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1360B225BD03C100183F72 /* ExperienceUITests.swift */; };
+		CB272CF725BDBD1C000330CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB272CF625BDBD1C000330CF /* LoginViewController.swift */; };
+		CB272CFF25BDBD9C000330CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB272CFE25BDBD9C000330CF /* HomeViewController.swift */; };
+		CB272D0A25BDBF6A000330CF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB272D0925BDBF6A000330CF /* RegisterViewController.swift */; };
+		CB272D1225BDBFDC000330CF /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB272D1125BDBFDC000330CF /* UserViewController.swift */; };
 		F403558BDE2F14CA3BBA2C81 /* Pods_Experience_ExperienceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB00054EFA6BC67A926E421 /* Pods_Experience_ExperienceUITests.framework */; };
 		F69A97CCEF97459D7B668BC1 /* Pods_Experience.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983D05CF5EC2DEDEDBDC09C5 /* Pods_Experience.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +64,10 @@
 		CB1360AE25BD03C100183F72 /* ExperienceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExperienceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1360B225BD03C100183F72 /* ExperienceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceUITests.swift; sourceTree = "<group>"; };
 		CB1360B425BD03C100183F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB272CF625BDBD1C000330CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CB272CFE25BDBD9C000330CF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CB272D0925BDBF6A000330CF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CB272D1125BDBFDC000330CF /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		DB9E35C8555082657A308CBA /* Pods-ExperienceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExperienceTests.release.xcconfig"; path = "Target Support Files/Pods-ExperienceTests/Pods-ExperienceTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,13 +147,17 @@
 		CB13608F25BD03BD00183F72 /* Experience */ = {
 			isa = PBXGroup;
 			children = (
+				CB13609E25BD03C000183F72 /* Info.plist */,
 				CB13609025BD03BD00183F72 /* AppDelegate.swift */,
 				CB13609225BD03BD00183F72 /* SceneDelegate.swift */,
 				CB13609425BD03BD00183F72 /* ViewController.swift */,
+				CB272CF625BDBD1C000330CF /* LoginViewController.swift */,
+				CB272CFE25BDBD9C000330CF /* HomeViewController.swift */,
+				CB272D0925BDBF6A000330CF /* RegisterViewController.swift */,
+				CB272D1125BDBFDC000330CF /* UserViewController.swift */,
 				CB13609625BD03BD00183F72 /* Main.storyboard */,
-				CB13609925BD03C000183F72 /* Assets.xcassets */,
 				CB13609B25BD03C000183F72 /* LaunchScreen.storyboard */,
-				CB13609E25BD03C000183F72 /* Info.plist */,
+				CB13609925BD03C000183F72 /* Assets.xcassets */,
 			);
 			path = Experience;
 			sourceTree = "<group>";
@@ -406,7 +418,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB272D1225BDBFDC000330CF /* UserViewController.swift in Sources */,
+				CB272CFF25BDBD9C000330CF /* HomeViewController.swift in Sources */,
+				CB272CF725BDBD1C000330CF /* LoginViewController.swift in Sources */,
 				CB13609525BD03BD00183F72 /* ViewController.swift in Sources */,
+				CB272D0A25BDBF6A000330CF /* RegisterViewController.swift in Sources */,
 				CB13609125BD03BD00183F72 /* AppDelegate.swift in Sources */,
 				CB13609325BD03BD00183F72 /* SceneDelegate.swift in Sources */,
 			);
