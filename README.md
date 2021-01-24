@@ -1,5 +1,6 @@
-# Wander
-**Explore your city like never before**
+# W a n d e r
+> Explore your city like never before.
+
 Planning dates or activities can be hard, especially when you're on a budget, or even worse... when you're in the middle of a pandemic! That's why we created an app that does it all for you!
 
 **What it does**
