@@ -140,6 +140,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.57853931189999996" green="0.76413196329999999" blue="0.68121838570000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zMe-yT-RO7"/>
                     <connections>
                         <outlet property="emailTextField" destination="QkN-Sq-OKD" id="Nid-7f-pEN"/>
                         <outlet property="loginButton" destination="Eef-pZ-xFj" id="cy3-7t-SOF"/>
@@ -210,6 +211,7 @@
                         <viewLayoutGuide key="safeArea" id="c6A-DG-KZ3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iHv-Ku-UMM"/>
                     <connections>
                         <outlet property="emailTextField" destination="cXH-ck-UsG" id="aQT-En-Lf9"/>
                         <outlet property="passwordTextField" destination="prz-9F-rGc" id="tQS-R2-wga"/>
@@ -223,7 +225,7 @@
         <!--Home View Controller-->
         <scene sceneID="XB9-eQ-m3m">
             <objects>
-                <viewController id="AVB-hm-ixW" customClass="HomeViewController" customModule="Experience" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="AVB-hm-ixW" customClass="HomeViewController" customModule="Experience" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ufz-TR-kS7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,6 +7,9 @@ target 'Experience' do
 
   # Pods for Experience
   pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
   pod 'MaterialComponents/Buttons'
 
   target 'ExperienceTests' do
