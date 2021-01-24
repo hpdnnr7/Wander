@@ -6,6 +6,7 @@ target 'Experience' do
   use_frameworks!
 
   # Pods for Experience
+  pod 'Firebase/Analytics'
 
   target 'ExperienceTests' do
     inherit! :search_paths
