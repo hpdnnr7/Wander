@@ -14,9 +14,11 @@ import CoreLocation
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var searchBar: UISearchBar!
-    
     @IBOutlet weak var dateSetting: UIDatePicker!
+    
+    
+    @IBOutlet weak var budgetLabel: UILabel!
+    @IBOutlet weak var budgetSlider: UISlider!
     
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 18000
@@ -24,11 +26,20 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         checkLocationServices()
+        
 //      call annotations function and put in annotationsLocations
-        createAnnotations(locations: annotationLocations)
+        createAnnotations(locations: annotationLocations2)
     }
     
-//    Annotation locations
+//  Budget Slider
+    @IBAction func sliderChange(_ sender: UISlider) {
+        
+        let sliderValue = (budgetSlider.value * 100).rounded()/100
+        budgetLabel.text = String("$ \(sliderValue)")
+    }
+    
+    
+    //    Annotation locations default
     let annotationLocations = [
         ["title": "NY Botannical Garden", "latitude": 40.86334815996547,"longitude": -73.87971686577607],
         ["title": "Bronx Zoo", "latitude": 40.851459752719634,"longitude": -73.87728163045831],
@@ -37,6 +48,14 @@ class HomeViewController: UIViewController {
         ["title": "CCNY", "latitude": 40.819414283004996,"longitude": -73.9498943586227]
     ]
     
+    //    Annotation locations option 2
+    let annotationLocations2 = [
+        ["title": "Grand Central", "latitude": 40.75274547975853,"longitude": -73.97719814211887],
+        ["title": "Bryant Park", "latitude": 40.75401341638318,"longitude": -73.983407201027],
+        ["title": "Times Square", "latitude": 40.75598084817383,"longitude": -73.98638947346113],
+        ["title": "Hudson Yards", "latitude": 40.75514921291823,"longitude": -74.00076935031002],
+        ["title": "Chelsea Piers", "latitude": 40.74852856162892,"longitude": -74.00840129251715]
+    ]
 //    Create annotation
     func createAnnotations(locations: [[String: Any]]){
         for location in locations {
