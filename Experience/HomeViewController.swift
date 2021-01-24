@@ -11,7 +11,7 @@ import MapKit
 import CoreLocation
 
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var dateSetting: UIDatePicker!
@@ -112,15 +112,15 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: CLLocationManagerDelegate{
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last else { return }
-        let region = MKCoordinateRegion.init(center: location.coordinate, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
-        mapView.setRegion(region, animated: true)
-    }
-
-
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        checkLocationAuthorization()
-    }
-}
+//extension HomeViewController: CLLocationManagerDelegate{
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        guard let location = locations.last else { return }
+//        let region = MKCoordinateRegion.init(center: location.coordinate, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+//        mapView.setRegion(region, animated: true)
+//    }
+//
+//
+//    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+//        checkLocationAuthorization()
+//    }
+//}
