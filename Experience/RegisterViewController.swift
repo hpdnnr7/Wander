@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class RegisterViewController: UIViewController {
     
@@ -23,8 +25,30 @@ class RegisterViewController: UIViewController {
     }
     
     // MARK: - IBActions
-    @IBAction func registerPressed(_ sender: UIButton) {
+    @IBAction func registerPressed(_ sender: Any) {
         
+        let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+            
+            let db = Firestore.firestore()
+            
+            db.collection("users").addDocument(data: ["email": email, "uid": result!.user.uid])
+            
+            self.transitionToHome()
+            
+            }
     }
+    
+    func transitionToHome() {
+        let homeViewController =
+            storyboard?.instantiateViewController(identifier: "HomeVC") as?
+        HomeViewController
+        
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
+    }
+    
     
 }
