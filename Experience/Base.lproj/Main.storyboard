@@ -21,9 +21,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="app-logo" translatesAutoresizingMaskIntoConstraints="NO" id="lPR-jq-E6f">
-                                        <rect key="frame" x="-138" y="30" width="690" height="706"/>
+                                        <rect key="frame" x="-114" y="30" width="643" height="669"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Explore your city like never before" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOv-AV-uVZ">
+                                        <rect key="frame" x="33" y="439" width="349" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.51274454589999996" green="0.78225582839999996" blue="0.68223804239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -34,27 +41,29 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2X-3E-Byz" customClass="MDCButton">
                                         <rect key="frame" x="22" y="39" width="174" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.60274219510000004" green="0.63187330959999999" blue="0.7447555065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.51274454589999996" green="0.78225582839999996" blue="0.68223804239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                         <state key="normal" title="LOG IN">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xw7-S0-t8w"/>
+                                            <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UCe-Me-uUH"/>
                                             <outletCollection property="gestureRecognizers" destination="g99-gq-6Tc" appends="YES" id="t3M-7b-RO6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLh-rR-RCH">
                                         <rect key="frame" x="218" y="39" width="174" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.60406333209999996" green="0.6255708337" blue="0.74868184329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                         <state key="normal" title="SIGN UP">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.51274454589999996" green="0.78225582839999996" blue="0.68223804239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="signUpPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kcd-kv-VVh"/>
                                             <outletCollection property="gestureRecognizers" destination="XIY-Mi-ym2" appends="YES" id="8ff-iY-B7C"/>
                                         </connections>
                                     </button>
@@ -67,7 +76,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="SGQ-Xi-SeR"/>
                     <connections>
-                        <outlet property="loginButton" destination="D2X-3E-Byz" id="Qb0-pV-UH3"/>
+                        <outlet property="loginButton" destination="D2X-3E-Byz" id="yl7-Uc-jki"/>
                         <outlet property="signUpButton" destination="jLh-rR-RCH" id="he8-zC-ee6"/>
                     </connections>
                 </viewController>
@@ -140,6 +149,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.57853931189999996" green="0.76413196329999999" blue="0.68121838570000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AGP-ZQ-J9W"/>
                     <connections>
                         <outlet property="emailTextField" destination="QkN-Sq-OKD" id="Nid-7f-pEN"/>
                         <outlet property="loginButton" destination="Eef-pZ-xFj" id="cy3-7t-SOF"/>

@@ -8,6 +8,7 @@ target 'Experience' do
   # Pods for Experience
   pod 'Firebase/Analytics'
   pod 'MaterialComponents/Buttons'
+  pod 'MaterialComponents/Buttons+Theming'
 
   target 'ExperienceTests' do
     inherit! :search_paths

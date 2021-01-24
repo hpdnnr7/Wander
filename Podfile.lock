@@ -70,6 +70,22 @@ PODS:
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
+  - "MaterialComponents/Buttons+ColorThemer (120.0.0)":
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Color
+  - "MaterialComponents/Buttons+ShapeThemer (120.0.0)":
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Shape
+  - "MaterialComponents/Buttons+Theming (120.0.0)":
+    - MaterialComponents/Buttons
+    - "MaterialComponents/Buttons+ColorThemer"
+    - "MaterialComponents/Buttons+ShapeThemer"
+    - "MaterialComponents/Buttons+TypographyThemer"
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/ShadowElevations
+  - "MaterialComponents/Buttons+TypographyThemer (120.0.0)":
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Typography
   - MaterialComponents/Elevation (120.0.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
@@ -87,6 +103,22 @@ PODS:
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
+  - MaterialComponents/schemes/Color (120.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+  - MaterialComponents/schemes/Container (120.0.0):
+    - MaterialComponents/schemes/Color
+    - MaterialComponents/schemes/Shape
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/schemes/Shape (120.0.0):
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+  - MaterialComponents/schemes/Typography (120.0.0):
+    - "MaterialComponents/schemes/Typography+BasicFontScheme"
+    - "MaterialComponents/schemes/Typography+Scheming"
+    - MaterialComponents/Typography
+  - "MaterialComponents/schemes/Typography+BasicFontScheme (120.0.0)"
+  - "MaterialComponents/schemes/Typography+Scheming (120.0.0)"
   - MaterialComponents/ShadowElevations (120.0.0)
   - MaterialComponents/ShadowLayer (120.0.0):
     - MaterialComponents/ShadowElevations
@@ -113,6 +145,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Analytics
   - MaterialComponents/Buttons
+  - "MaterialComponents/Buttons+Theming"
 
 SPEC REPOS:
   trunk:
@@ -145,6 +178,6 @@ SPEC CHECKSUMS:
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 63d13651ef311c1f6063193c21217167e2855049
+PODFILE CHECKSUM: d661bf3ae7671039810aca3e9b720d55712144df
 
 COCOAPODS: 1.10.1
