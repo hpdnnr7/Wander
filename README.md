@@ -29,7 +29,6 @@ Open and run "Experience.xcworkspace" with Xcode
 
 ## Authors
 
-* **Mayra Vazquez-Sanchez** - *Initial work* - [mayravs](https://github.com/mayravs)
 * **Michael Mayaguari** - *Initial work* - [mgmayagu](https://github.com/mgmayagu)
-* **Wilson Ng** - *Initial work* - [wilsonvetdev](https://github.com/wilsonvetdev)
-* **Sagun Pandey** - *Initial work* - [sagunpandey123](https://github.com/sagunpandey123)
+* **Hope Dunner** - *Initial work* - [hpdnnr7](https://github.com/hpdnnr7)
+* **Asma Sadia** - *Initial work* - [asma512](https://github.com/asma512)
